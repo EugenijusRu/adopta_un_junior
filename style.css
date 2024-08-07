@@ -1,0 +1,165 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('images/_748400d7-c93b-43f5-8199-63a0111be010.jpeg') no-repeat center center/cover;
+    z-index: -1; /* Asegura que las partículas estén detrás del contenido */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté delante de las partículas */
+    text-align: center;
+    color: #fff; /* Color del texto para que sea visible sobre la imagen de fondo */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 50px; /* Ajusta este valor según el tamaño de tu logo */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+
+#animated-title span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: appear 0.5s forwards;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#home h1, #home p {
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+    section {
+        padding: 60px 100px;
+    }
+}
+
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats, .count-particles {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Coloca el footer en la parte inferior de la página */
+    width: 100%; /* Asegura que el footer se extienda a lo largo de toda la página */
+    color: #fff; /* Texto blanco para mayor contraste */
+    padding: 10px 0; /* Añade un poco de padding vertical */
+    text-align: center; /* Centra el contenido del footer */
+    z-index: 1000; /* Asegura que el footer esté sobre otros elementos */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos social horizontalmente */
+    list-style: none; /* Elimina los estilos de lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column; /* Alinea ícono y texto verticalmente */
+    align-items: center; /* Centra ícono y texto horizontalmente */
+    margin: 0 20px; /* Espaciado horizontal entre los iconos */
+}
+
+.social-icons a {
+    color: #fff; /* Establece el color de los íconos a blanco */
+    font-size: 44px; /* Tamaño de los íconos */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.social-icons a:hover {
+    color: #ccc; /* Cambia el color al pasar el mouse */
+}
+
+.social-icon span {
+    margin-top: 5px; /* Espacio entre el icono y el texto */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+.section-anterior {
+    padding-bottom: 20px; /* Ajusta el padding inferior para controlar el espacio */
+}
+
+h2 {
+    margin-top: 10px;
+}
