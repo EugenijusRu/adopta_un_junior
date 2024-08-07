@@ -47,7 +47,7 @@ header {
 }
 
 #logo {
-    height: 50px; /* Ajusta este valor según el tamaño de tu logo */
+    height: 40px; /* Ajusta este valor según el tamaño de tu logo */
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
@@ -143,7 +143,7 @@ footer {
 
 .social-icons a {
     color: #fff; /* Establece el color de los íconos a blanco */
-    font-size: 44px; /* Tamaño de los íconos */
+    font-size: 64px; /* Tamaño de los íconos */
     transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 
