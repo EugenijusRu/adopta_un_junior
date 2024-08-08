@@ -47,7 +47,7 @@ header {
 }
 
 #logo {
-    height: 40px; /* Ajusta este valor según el tamaño de tu logo */
+    height: 40px; 
     margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
@@ -163,3 +163,10 @@ footer {
 h2 {
     margin-top: 10px;
 }
+
+
+/* Mejorar la legibilidad del texto con sombra */
+h1, h2, h3, h4, h5, h6, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
